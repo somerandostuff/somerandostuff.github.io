@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <div class="fade" aria-hidden="true"></div>
+    <button class="start-button" type="button">Press to start</button>
+    <audio id="load-sfx" src="sfx/brawlentine_load_01.ogg" preload="auto"></audio>
+
+    <script>
+        const Fade = document.querySelector(".fade");
+        const StartButton = document.querySelector(".start-button");
+        const LoadSfx = document.getElementById("load-sfx");
+
+        StartButton.addEventListener("click", () => {
+            StartButton.classList.add("is-hidden");
+            Fade.classList.add("is-started");
+            LoadSfx.volume = 1;
+
+            LoadSfx.play()
+                .then(() => {
+                    console.log("Sound played!");
+                })
+                .catch((Err) => {
+                console.error("An error occurred! " + Err);
+                });
+        });
+    </script>
+</body>
+</html>

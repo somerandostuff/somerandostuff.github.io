@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Lilita One';
+  src: url('../font/LilitaOne-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pusia Bold';
+  src: url('../font/Pusia-Bold.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*
+{
+    font-family: 'Lilita One', 'Pusia Bold', Arial, Helvetica, sans-serif;
+}

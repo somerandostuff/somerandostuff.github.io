@@ -1,0 +1,62 @@
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            background: #000 url("../img/loading_screen.png") center / cover no-repeat fixed;
+        }
+
+        .fade {
+            position: fixed;
+            inset: 0;
+            background: #000;
+        }
+
+        .fade.is-started {
+            animation: RevealBackground 0.8s ease forwards;
+        }
+
+        .start-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vh;
+            height: 100vh;
+            border: none;
+            background: black;
+            color: white;
+            z-index: 1;
+            font-size: 67pt;
+
+            animation: TextPulse 0.5s ease-in-out infinite;
+        }
+
+        .start-button.is-hidden {
+            display: none;
+        }
+
+        @keyframes TextPulse {
+        0% { opacity: 1; }
+        50% { opacity: 0.6; }
+        100% { opacity: 1; }
+        }
+
+        @keyframes RevealBackground {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }

@@ -1,0 +1,12 @@
+{
+    "WhatThisIsUsedFor": "Story info -- includes stuff like its name, description, etc. Also used to determine the starting point of the story.",
+    "ID": "A_64_CharacterString_ThatCanBeAnything_But_HasToBeASCIICharsOnly",
+    "Name": "Story Name. Eg: Date with Angelo",
+    "Description": "Story Description. Eg: A custom date with Angelo! Fun.",
+    "Author": "Author's name. pipis",
+    "DateCreated": "Created time. 2026-05-23T18:18:52Z+0700",
+    "DateUpdated": "Last updated. 2026-05-23T18:19:32Z+0700",
+    "UsesDownloadableContent": false,
+    "AssetsLink": "Link you'll use to download the assets. about:blank",
+    "StartingPoint": "/Storyboard/Story1.json"
+}

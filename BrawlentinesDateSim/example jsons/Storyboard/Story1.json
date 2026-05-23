@@ -1,0 +1,28 @@
+{
+    "Variables": [
+        ["happy", "0"]
+    ],
+    "StoryID": "start",
+    "Content": "Howdy darling etc etc etc... I think that's how they usually start their dates.",
+    "Action": "",
+    "SoundsToPlay": [
+        ["sound/file.mp3", 100, 100, 0]
+    ],
+    "Choicers": [
+        {
+            "Content": "Say something",
+            "RedirectTo": "route1",
+            "SetVariables": [
+                ["happy", "1"]
+            ]
+        },
+        {
+            "Content": "Do something",
+            "RedirectTo": "route2",
+            "SetVariables": [
+                ["happy", "5"]
+            ]
+        }
+    ],
+    "BgMusic": "music/file.mp3"
+}
